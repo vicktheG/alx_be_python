@@ -13,9 +13,7 @@ def perform_operation(num1, num2, operation):
             result = num1 / num2
             if num2 == 0:
                 print("Cannot be divide by 0")
-            else:
+            elif num2 != 0:
                 print(num1 / num2)
-        case _:
-            print("Enter a valid operand")
 
     return result
