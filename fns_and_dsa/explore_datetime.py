@@ -5,7 +5,7 @@ import datetime
 def display_current_datetime():
     current_date = datetime.datetime.now()
     # to remove the microseconds
-    dt = current_date.replace(microsecond=0)
+    dt = current_date.strftime("%Y-%m-%d %H:%M:%S")
     print(f"Current date and time: {dt} ")
 
 
@@ -18,7 +18,7 @@ def calculate_future_date():
     dt = datetime.datetime.now()
     future = datetime.timedelta(days)
     future_date = dt + future
-    future_date = future_date.replace(microsecond=0)
+    future_date = future_date.strftime("%Y-%m-%d %H:%M:%S")   
     print(f"Future date: {future_date}")
 
 
