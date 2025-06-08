@@ -1,5 +1,5 @@
+from datetime import datetime 
 import datetime
-
 
 # Function to print current time in YYYY MM DD HH MM SS
 def display_current_datetime():
@@ -19,7 +19,6 @@ def calculate_future_date():
     future = datetime.timedelta(days)
     future_date = dt + future
     future_date = future_date.replace(microsecond=0)
-
     print(f"Future date: {future_date}")
 
 
